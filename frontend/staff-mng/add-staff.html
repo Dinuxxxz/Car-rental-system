@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Staff</title>
+    <link rel="stylesheet" href="./css/add-staff.css">
+</head>
+<body>
+
+    <div class="section">
+        <h2>Add New Staff</h2>
+
+        <form class="form-label form-css-label">
+            <fieldset>
+                <input id="firstName" name="firstName" type="text" autocomplete="off" placeholder="First Name" required />
+
+            </fieldset>
+
+            <fieldset>
+                <input id="lastName" name="lastName" type="text" autocomplete="off" placeholder="Last Name" required />
+                
+            </fieldset>
+
+            <fieldset>
+                <input id="nic" name="nic" type="text" autocomplete="off" placeholder="NIC" required />
+
+            </fieldset>
+
+            <fieldset>
+                <input id="contactNumber" name="contactNumber" type="tel" autocomplete="off" placeholder="Contact Number" required />
+
+            </fieldset>
+
+            <fieldset class="gender-fieldset">
+                <legend>Gender</legend>
+           
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    Male
+                </label>
+           
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    Female
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <input id="address" name="address" type="text" autocomplete="off" placeholder="Address" required />
+
+            </fieldset>
+
+            <fieldset>
+                <input id="designation" name="designation" type="text" autocomplete="off" placeholder="Designation" required />
+
+            </fieldset>
+
+            <button type="submit">Add Staff</button>
+        </form>
+    </div>
+
+</body>
+</html>
