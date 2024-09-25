@@ -1,11 +1,10 @@
 <?php
 require '../dbconfig.php';
 
-$stmt = $pdo->query("SELECT * FROM staff");
-$staff_members = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$result = mysqli_query($conn, "SELECT * FROM staff");
 
-if ($staff_members) {
-    foreach ($staff_members as $staff) {
+if (mysqli_num_rows($result) > 0) {
+    while ($staff = mysqli_fetch_assoc($result)) {
         echo "ID: " . $staff['id'] . "<br>";
         echo "First Name: " . $staff['first_name'] . "<br>";
         echo "Last Name: " . $staff['last_name'] . "<br>";
@@ -19,3 +18,6 @@ if ($staff_members) {
 } else {
     echo "No staff members found.";
 }
+
+// Close the connection
+mysqli_close($conn);
