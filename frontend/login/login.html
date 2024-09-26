@@ -8,6 +8,129 @@
 
 </head>
 <body>
+</head>
+
+<style>
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #cf5f57;
+		padding: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index:1000;
+
+	}
+
+
+	.logo-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 20px;
+	}
+	
+	.logo{
+		width:30px;
+		height:auto;
+	
+	}
+	
+	.site-name{
+		color:white;
+		font-size:12px;
+		text-align:center;
+		margin-top:5px;
+	}
+	
+	nav{
+		flex-grow:1;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #cf5f57;	
+		display:flex;
+		justify-content: center;
+		flex-wrap:wrap;
+		
+	}
+	
+	li{
+		margin:0 10px;
+	}
+	
+	li a{
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: background-color 0.4s;
+	}
+	
+	li a:hover{
+		background-color: black;
+	}
+	
+	.button-container{
+		display: flex;
+		gap: 9px;
+		margin-right: 20px;
+		
+	}
+	
+	button{
+		border:none;
+		color:white;
+		text-align:center;
+		text-decoration:none;
+		padding: 16px 32px;
+		background-color:#cf5f57;
+		border: none;
+		cursor: pointer;
+		border-radius:4px;
+		font-size: 14px;
+		margin-right:4px 2px;
+		transition-duration:background-color 0.4s;
+	}
+	
+	button:hover{
+		background-color: black;}
+</style>
+
+<body>
+
+
+
+<div class = "header">
+ <div class = "logo-container">
+	 <img src = "C:\Users\SINGER\Desktop\Y1S2\y1s2-Project\IWT\Car rental logo vector image on VectorStock.jpeg" alt = "logo" class = "logo">
+	 <div class = "site-name"> SPEED RIDE</div>
+ </div>
+ 
+<nav>
+ <ul>
+	<li> <a class = "active" href = "#home">Home</a></li>
+	<li> <a href = "#aboutus">About us</a></li>
+	<li> <a href = "#cars">Cars</a></li>
+	<li> <a href = "#faq">FAQ</a></li>
+ </ul>
+</nav>
+
+ <div class = "button-container">
+	<button>Sign up</button>
+	<button>Log in</button>
+ </div>
+</div>
 	<div class="image">
 		<div class="overlay">
 
@@ -16,9 +139,10 @@
 			<div class="form-screen">
 				<div class="form-content">
 					<form class="login-form">
+						<h2 ><center> Login</center></h2>
 						<div class="input-field">
 							<i class="icon fas fa-user"></i>
-							<input type="text" class="input" placeholder="ID/ Email">
+							<input type="text" class="input" placeholder="ID/ Email"  >
 						</div>
 						<div class="input-field">
 							<i class="icon fas fa-lock"></i>
@@ -26,8 +150,8 @@
 						</div>
 						<button class="submit-button">
 							<span class="button-text">Log In</span>
-							<i class="button-icon fas fa-arrow-right"></i>
 						</button>
+						<p class="message">Not registered? <a href="#">Create an account</a></p>
 					</form>
 					<div class="alternative-login">
 						<h3 style="font-size:small;">Or</h3>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Ride</title>
+    <link rel="stylesheet" href="./ride-plan.css">
+</head>
+<body>
+
+    <div class="ride-plan-container">
+        <h1>Plan Your Ride</h1>
+
+
+        <form class="ride-plan-form">
+            
+
+            <div class="form-group">
+                <label for="pickup-location">Pickup Location:</label>
+                <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter pickup location" required>
+            </div>
+
+ 
+            <div class="form-group">
+                <label for="pickup-date">Pickup Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="dropoff-date">Drop-off Date:</label>
+                <input type="date" id="dropoff-date" name="dropoff-date" required>
+            </div>
+
+
+            <div class="form-group">
+                <label>Need a Driver?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="driver-yes" name="with-driver" value="yes" required>
+                    <label for="driver-yes">Yes</label>
+                    
+                    <input type="radio" id="driver-no" name="with-driver" value="no">
+                    <label for="driver-no">No</label>
+                </div>
+            </div>
+
+          
+            <div class="form-group">
+                <label for="coupon">Discount Coupon:</label>
+                <input type="text" id="coupon" name="coupon" placeholder="Enter coupon code">
+            </div>
+
+        
+            <button type="submit" class="proceed-button">Proceed to Payment</button>
+        </form>
+    </div>
+
+</body>
+</html>
